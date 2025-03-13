@@ -1,0 +1,247 @@
+:root {
+    --turquoise: rgb(2, 138, 158);
+    --darkturquoise: rgb(9, 81, 92);
+    --green: rgb(73, 126, 23);
+    --blue: rgb(31, 83, 143);
+    --purple: rgb(31, 83, 143);   
+    --red: rgb(151, 23, 23);
+}
+
+header {
+    background: url("../img/banner_fruits.png");
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header div {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(2, 138, 158, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px black;
+    border: 10px double white;
+    border-radius: 50%;
+}
+
+header div h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: white;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--turquoise);
+}
+
+.nav-link.active {
+    background-color: var(--darkturquoise);
+}
+
+.nav-link:hover, .nav-link:focus {
+    border-top: 3px double white;
+    border-bottom: 3px double white;
+}
+
+#kiwi-img {
+    width: 250px;
+    display: none;
+    float: right;
+}
+
+@media (min-width: 770px) {
+    #kiwi-img {
+      display: inline-block;
+    }
+}
+
+h2 {
+    color:  var(--darkturquoise);
+    font-family: 'Heattenschweiler', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+details {
+    border: 1px dashed var(--turquoise);
+    background-color: rgba(2, 138, 158, 0.2);
+    margin-bottom: 15px;
+}
+
+details summary {
+    background-color: var(--turquoise);
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+details p strong {
+    font-weight: bold;
+}
+
+
+table {
+    width: 75%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: black;
+    color: white;
+}
+
+table tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    table {
+        width: 75%;
+    }
+}
+
+.calculator-form {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media (min-width: 1024px) {
+    .calculator-form {
+        width: 50%;
+    }
+}
+
+#calculate-btn {
+    background-color: #212529;
+    color: white;
+}
+
+#reset-btn {
+    border: 1px solid #212529;
+}
+
+.info-elements {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.info-item {
+    width: 18%;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    border: 3px solid white;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.info-item h3 {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+#fat {
+    background-color: var(--green);
+    outline: 3px solid var(--green);
+}
+
+#fiber {
+    background-color: var(--darkturquoise);
+    outline: 3px solid var(--darkturquoise);
+}
+
+#calories {
+    background-color: var(--turquoise);
+    outline: 3px solid var(--turquoise);
+}
+
+#protein {
+    background-color: var(--purple);
+    outline: 3px solid var(--purple);
+}
+
+#carbs {
+    background-color: var(--red);
+    outline: 3px solid var(--red);
+}
+
+.info-item p {
+    color: white;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .info-elements {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-item {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
